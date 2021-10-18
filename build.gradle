@@ -5,10 +5,16 @@ plugins {
 }
 
 group 'net.phoneappli'
-version '1.0.0'
+version '1.0.1'
 
 repositories {
     mavenCentral()
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(8)
+    }
 }
 
 dependencies {
